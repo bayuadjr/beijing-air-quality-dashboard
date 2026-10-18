@@ -82,6 +82,8 @@ Ctrl + C
 | **Visualisasi 2** | Pola jam harian (*diurnal*), tren bulanan (*musiman*) dalam bentuk tab |
 | **Analisis Lanjutan** | *Manual Grouping & Binning* kategori risiko kesehatan (5 kelas) + heatmap korelasi PM2.5 dengan parameter cuaca (TEMP, PRES, WSPM) |
 
+> Catatan: notebook menganalisis 6 parameter cuaca (TEMP, PRES, DEWP, RAIN, WSPM). Dashboard memakai 4 parameter kunci saja karena `main_data.csv` sengaja diekspor ringkas (hanya kolom yang dipakai visualisasi) agar ukuran file tetap ~22 MB dan proses *load* di Streamlit Cloud cepat.
+
 ---
 
 ## 🔍 Temuan Utama
