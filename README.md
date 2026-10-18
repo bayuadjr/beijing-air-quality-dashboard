@@ -9,7 +9,10 @@ Proyek akhir **Belajar Analisis Data dengan Python (Dicoding)** — analisis dat
 ## 🔗 Dashboard Online
 
 Dashboard sudah di-deploy di Streamlit Community Cloud:
-**Lihat `url.txt`** untuk tautan publiknya.
+
+🔗 **https://beijing-air-quality-bayu.streamlit.app**
+
+Tautan yang sama juga tersimpan di berkas `url.txt`.
 
 ---
 
