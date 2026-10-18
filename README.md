@@ -3,7 +3,7 @@
 Proyek akhir **Belajar Analisis Data dengan Python (Dicoding)** — analisis data dan dashboard interaktif menggunakan **Air Quality Dataset** dari 12 stasiun pemantauan kualitas udara di Beijing, Tiongkok.
 
 - **Nama:** Bayu Adji Ramadhan
-- **Dataset:** [Air Quality Dataset — PRSA Beijing](https://www.kaggle.com/datasets/sid321axn/beijing-multisite-airquality-data-set) (2013–2017)
+- **Dataset:** [Beijing Multi-Site Air Quality Data Set — UCI ML Repository #501](https://archive.ics.uci.edu/dataset/501/beijing+multi+site+air+quality+data) (2013–2017)
 - **Periode analisis dashboard:** Januari 2015 – Februari 2017
 
 ## 🔗 Dashboard Online
