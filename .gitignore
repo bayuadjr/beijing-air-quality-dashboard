@@ -1,0 +1,17 @@
+# macOS
+.DS_Store
+
+# Virtual environment
+env/
+venv/
+.venv/
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Dataset mentah (zip asli, isinya sudah di-extract ke data/)
+data/Air-quality-dataset.zip
