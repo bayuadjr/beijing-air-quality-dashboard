@@ -150,13 +150,18 @@ with tab1:
         palette={'Urban': '#e74c3c', 'Suburban': '#f39c12', 'Non-Urban': '#2ecc71'},
         marker='o', linewidth=2.2, ax=ax3
     )
-    ax3.set_title("Fluktuasi Rata-rata PM2.5 per Jam Berdasarkan Zona Wilayah", fontsize=12)
+    ax3.set_title("Fluktuasi Rata-rata PM2.5 per Jam Berdasarkan Zona Wilayah (2015–2017)", fontsize=12)
     ax3.set_xlabel("Jam (0 - 23)")
     ax3.set_ylabel("Rata-rata PM2.5 (µg/m³)")
     ax3.set_xticks(range(0, 24))
     ax3.grid(True, linestyle='--', alpha=0.5)
     st.pyplot(fig3)
-    st.info("💡 **Insight:** Konsentrasi PM2.5 mencapai titik terendah pada pagi hari (pukul 06:00–07:00) dan melonjak tajam pada malam hari (pukul 20:00–23:00) akibat penyusutan lapisan atmosfer malam serta aktivitas logistik kendaraan berat.")
+    st.info(
+        "💡 **Insight:** Sepanjang periode 2015–2017, konsentrasi PM2.5 mencapai titik rendah pada pagi hari "
+        "(pukul 06:00–07:00, Non-Urban 54,62 µg/m³) serta sore hari (pukul 15:00–16:00), dan melonjak tajam pada malam hari "
+        "(pukul 20:00–23:00, dengan puncak di wilayah Urban 84,32 µg/m³ dan Suburban 76,62 µg/m³ pada pukul 23:00, "
+        "serta Non-Urban 67,65 µg/m³ pada pukul 20:00) akibat penyusutan lapisan atmosfer malam dan aktivitas logistik kendaraan berat."
+    )
 
 with tab2:
     monthly_df = filtered_df.groupby(['station_type', pd.Grouper(key='datetime', freq='ME')])['PM2.5'].mean().reset_index()
@@ -166,12 +171,16 @@ with tab2:
         palette={'Urban': '#e74c3c', 'Suburban': '#f39c12', 'Non-Urban': '#2ecc71'},
         marker='o', linewidth=2, ax=ax4
     )
-    ax4.set_title("Tren Rata-rata Bulanan PM2.5 (Puncak Musim Dingin Setiap Januari)", fontsize=12)
+    ax4.set_title("Tren Rata-rata Bulanan PM2.5 Berdasarkan Zona Wilayah (2015–2017)", fontsize=12)
     ax4.set_xlabel("Waktu")
     ax4.set_ylabel("Rata-rata PM2.5 (µg/m³)")
     ax4.grid(True, linestyle='--', alpha=0.5)
     st.pyplot(fig4)
-    st.info("💡 **Insight:** Terlihat siklus musiman yang sangat kuat di mana polusi udara selalu memuncak pada bulan Desember–Januari (musim dingin) dan melandai pada bulan Agustus–September.")
+    st.info(
+        "💡 **Insight:** Terlihat siklus musiman yang sangat kuat sepanjang 2015–2017 di mana polusi udara selalu memuncak pada "
+        "musim dingin (November–Januari, khususnya Desember rata-rata 116,35 µg/m³ dengan rekor Desember 2015 mencapai 128,56 µg/m³ "
+        "di zona Urban) dan melandai pada akhir musim panas (Agustus rata-rata 45,06 µg/m³ dan September 51,36 µg/m³)."
+    )
 
 st.divider()
 

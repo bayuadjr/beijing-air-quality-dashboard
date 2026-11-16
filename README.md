@@ -18,8 +18,8 @@ Tautan yang sama juga tersimpan di berkas `url.txt`.
 
 ## 🎯 Pertanyaan Bisnis
 
-1. **Stasiun manakah** di masing-masing kategori wilayah (*Urban*, *Suburban*, *Non-Urban*) yang mencatatkan rata-rata konsentrasi **PM2.5** tertinggi dan terendah selama 2015–2017, untuk menentukan prioritas lokasi intervensi pengendalian emisi?
-2. **Pada jam berapakah** puncak rata-rata konsentrasi PM2.5 harian terjadi di tiap kategori wilayah, dan bagaimana pola fluktuasi musimannya — untuk mendukung penyusunan jadwal pembatasan operasional kendaraan berat dan peringatan dini kesehatan?
+1. **Stasiun manakah** di masing-masing kategori wilayah (*Urban*, *Suburban*, dan *Non-Urban*) yang mencatatkan rata-rata konsentrasi **PM2.5** tertinggi dan terendah selama periode tahun 2015 hingga 2017 untuk menentukan prioritas lokasi intervensi pengendalian emisi?
+2. **Pada jam berapakah** puncak rata-rata konsentrasi **PM2.5** harian terjadi di wilayah *Urban*, *Suburban*, dan *Non-Urban* selama periode tahun 2015 hingga 2017, serta bagaimana pola fluktuasi musimannya pada rentang 2015 hingga 2017 guna mendukung penyusunan jadwal pembatasan operasional kendaraan berat dan peringatan dini kesehatan?
 
 ---
 
@@ -91,10 +91,10 @@ Ctrl + C
 
 ## 🔍 Temuan Utama
 
-- **Hierarki wilayah konsisten sepanjang 24 jam:** *Urban* tertinggi (73–88 µg/m³) → *Suburban* (65–80 µg/m³) → *Non-Urban* (58–71 µg/m³).
-- **Pola diurnal:** titik terendah pada 06:00–07:00, lalu melonjak pada 20:00–23:00 akibat penyusutan lapisan atmosfer malam dan aktivitas logistik kendaraan berat.
-- **Siklus musiman kuat:** puncak polusi selalu jatuh pada Desember–Januari (musim dingin, inversi suhu), melandai pada Agustus–September.
-- **Meteorologi:** kecepatan angin (`WSPM`) berkorelasi negatif dengan PM2.5 (angin mendispersi polutan), sedangkan tekanan udara (`PRES`) berkorelasi positif — memperkuat temuan pola musim dingin.
+- **Perbandingan kategori wilayah & stasiun (2015–2017):** Rata-rata PM2.5 tertinggi berada di wilayah *Urban* (**76,51 µg/m³**; tertinggi **Dongsi 80,02 µg/m³**, terendah **Wanliu 73,50 µg/m³**) → diikuti *Suburban* (**68,46 µg/m³**; tertinggi **Shunyi 73,54 µg/m³**, terendah **Changping 63,39 µg/m³**) → dan *Non-Urban* (**61,45 µg/m³**; tertinggi **Huairou 62,95 µg/m³**, terendah sekaligus terbersih **Dingling 59,95 µg/m³**).
+- **Pola diurnal (2015–2017):** Konsentrasi PM2.5 mencapai titik rendah pada pagi hari (06:00–07:00, *Non-Urban* **54,62 µg/m³**) dan sore hari (15:00–16:00, *Urban* **70,22 µg/m³**, *Suburban* **62,38 µg/m³**), lalu melonjak pada malam hari (20:00–23:00) dengan puncak di *Urban* (**84,32 µg/m³** pukul 23:00), *Suburban* (**76,62 µg/m³** pukul 23:00), dan *Non-Urban* (**67,65 µg/m³** pukul 20:00).
+- **Siklus musiman kuat (2015–2017):** Puncak polusi selalu jatuh pada musim dingin November–Januari (rata-rata bulan **Desember 116,35 µg/m³**, **November 100,81 µg/m³**, dan **Januari 83,39 µg/m³**; rekor tertinggi pada **Desember 2015** hingga **128,56 µg/m³** di *Urban*), serta melandai pada akhir musim panas (**Agustus 45,06 µg/m³** dan **September 51,36 µg/m³**).
+- **Meteorologi:** Kecepatan angin (`WSPM`, `r = -0,32`) berkorelasi negatif dengan PM2.5 (angin efektif mendispersi polutan), sedangkan suhu udara (`TEMP`, `r = -0,15`) berkorelasi negatif yang mengonfirmasi tingginya polusi saat musim dingin.
 
 ---
 
